@@ -6,7 +6,7 @@ import { Type as PageType } from '../collections/Page';
 import NotFound from '../components/NotFound';
 import Head from '../components/Head';
 import classes from '../css/page.module.css';
-import RenderBlocks from '../components/RenderBlocks';
+// import RenderBlocks from '../components/RenderBlocks';
 
 const { publicRuntimeConfig: { SERVER_URL } } = getConfig();
 
@@ -40,7 +40,7 @@ const Page: React.FC<Props> = (props) => {
           />
         )}
       </div>
-      <RenderBlocks layout={page.layout} />
+      {/* <RenderBlocks layout={page.layout} /> */}
       <footer className={classes.footer}>
         <hr />
         NextJS + Payload Server Boilerplate made by
